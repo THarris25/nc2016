@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taylor's Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tabs.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body onload="initTabs()">
+<ul id="tabs">
+    <li><a href="#home">Home Page</a></li>
+    <li><a href="#assignments">Assignment Page</a></li>
+</ul>
+
+<div class="tabContent" id="home">
+    <h2>Welcome!</h2>
+    <div>
+        <p>This is my Net Centric Computing page.</p>
+        <p>Above you'll find a tab that displays all of the current, completed assignments for this class.</p>
+        <p id="githubLink"> </p>
+    </div>
+</div>
+<div class="tabContent" id="assignments">
+    <h2>Assignment Page</h2>
+    <div>
+        <p>Below are links to each completed assignment.</p>
+        <p>The code is written in such a way that the page degrades gracefully in browsers that don't support JavaScript or CSS.</p>
+        <li><a href="HelloWorld.html" onClick="theAnchorOnClick(1)"> Hello World Assignment</a></li>
+        <li><a href="Adindex.html" onclick="theAnchorOnClick(2)"> Ad Assignment </a></li>
+        <li><a href="AnnotatingCSS.html" onclick="theAnchorOnClick(3)"> Annotating CSS Assignment</a></li>
+    </div>
+</div>
+</body>

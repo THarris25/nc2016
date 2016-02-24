@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Annotating CSS</title>
+    <link href="style.css" type="style/css" rel="stylesheet"/>
+</head>
+<body>
+    <pre>
+        body
+        {
+        font-size: 80%;                         /* Default font and size for page */
+        font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+        }
+        ul#tabs
+        {
+        list-style-type: none;                  /* No bullets                     */
+        margin: 300px 0 0 0;                    /* Positive top margin            */
+        padding: 0 0 0.3em 0;                   /* Bottom padding on tabs to make  */
+        /* them adjacent to the content   */
+        }
+        ul#tabs li
+        {
+        display: inline;                        /* displays like an inline element*/
+        padding: 12px;                          /* sets padding size all around*/
+        }
+
+        ul#tabs li a
+        {
+        color: #42454a;                         /* sets text color*/
+        background-color: #dedbde;              /* sets background color*/
+        border: 1px solid #c9c3ba;              /* sets border size and color*/
+        border-bottom: none;                    /* removes bottom border*/
+        border-top-left-radius: 7px;            /* sets the top left and right corners to be*/
+        border-top-right-radius: 7px;           /* rounded with a radius of 7 pixels*/
+        padding: 0.3em 2em 0.3em 2em;           /* sets padding size*/
+        text-decoration: none;                  /* allows for any changes such as underlining later*/
+        }
+        ul#tabs li a:hover
+        {
+        background-color: #f1f0ee;              /* sets the color when the tab is being hovered over*/
+        }
+        ul#tabs li a.selected
+        {
+        color: #000;                            /* sets the text color to black*/
+        background-color: #f1f0ee;              /* changes the background color to match the page*/
+        font-weight: bold;                      /* sets the font to be bold*/
+        padding: 0.7em 0.3em 0.38em 0.3em;      /* sets the padding for the selected tab*/
+        }
+        div.tabContent
+        {
+        border: 1px solid #c9c3ba;              /* sets border size and color*/
+        padding: 0.5em;                         /* sets the tab content padding*/
+        background-color: #f1f0ee;              /* sets the content background color*/
+        }
+        div.tabContent.hide
+        {
+        display: none;                          /* hides the content from unselected tabs*/
+        }
+    </pre>
+</body>
+</html>

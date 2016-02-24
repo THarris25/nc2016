@@ -1,0 +1,96 @@
+body
+{
+    background-color:ivory;
+    font-size: 80%;                         /* Default font and size for page */
+    font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+h1
+{
+    text-align:center;
+}
+ul#tabs
+{
+    list-style-type: none;                  /* No bullets                     */
+    margin: 15px 0 0 0;                    /* Positive top margin            */
+    padding: 0 0 0.3em 0;                   /* Bottom padding on tabs to make  */
+    /* them adjacent to the content   */
+}
+ul#tabs li
+{
+    display: inline;
+    padding: 12px;
+}
+
+ul#tabs li a
+{
+    color: #42454a;
+    background-color: #dedbde;
+    border: 1px solid #c9c3ba;
+    border-bottom: none;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 0.3em 2em 0.3em 2em;
+    text-decoration: none;
+
+}
+
+ul#tabs li a:hover
+{
+    background-color: AntiqueWhite;
+}
+
+ul#tabs li a.selected
+{
+    color: #000;
+    background-color: AntiqueWhite;
+    font-weight: bold;
+    padding: 0.7em 0.3em 0.38em 0.3em;
+}
+
+div.tabContent
+{
+    border: 1px solid #c9c3ba;
+    padding: 0.5em;
+    background-color: AntiqueWhite;
+}
+
+div.tabContent.hide
+{
+    display: none;
+}
+
+p#githubLink
+{
+    color:LightGray;
+    float:bottom;
+    text-align:center;
+}
+
+ul#anchors li
+{
+    display: inline;
+}
+#anchor
+{
+    background-color: cadetblue;
+}
+
+
+#divMenuItem1
+{
+    display: none;
+
+}
+#divMenuItem2
+{
+    display: none;
+}
+#divMenuItem3
+{
+    display: none;
+}
+pre
+{
+    font-size:1.25em;
+
+}
