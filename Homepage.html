@@ -5,9 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="tabs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link href="style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body onload="initTabs()">
+<script>
+    $(document).ready(function(){
+        $("#surprise").hover(function(){
+            $("#surprise").hide();
+            $("#uphere").show();
+        });
+        $("#uphere").hover(function(){
+            $("#uphere").hide();
+            $("#tooslow").show();
+        });
+        $("#tooslow").hover(function(){
+            $("#tooslow").hide();
+            $("#annoyed").show();
+        });
+        $("#annoyed").hover(function(){
+            $("#annoyed").hide();
+            $("#uphere").show();
+        });
+
+    });
+</script>
 <ul id="tabs">
     <li><a href="#home">Home Page</a></li>
     <li><a href="#assignments">Assignment Page</a></li>
@@ -16,9 +38,13 @@
 <div class="tabContent" id="home">
     <h2>Welcome!</h2>
     <div>
+        <button id="uphere">Up Here!</button>
         <p>This is my Net Centric Computing page.</p>
+        <button id="annoyed">This is Fun!</button>
         <p>Above you'll find a tab that displays all of the current, completed assignments for this class.</p>
-        <p id="githubLink"> </p>
+        <button id="surprise">Surprise Me!</button>
+        <p id="githubLink"> <a href="https://github.com/THarris25/nc2016.git"> My GitHub Repository</a></p>
+        <button id="tooslow">Ha! Too Slow!</button>
     </div>
 </div>
 <div class="tabContent" id="assignments">
@@ -26,9 +52,9 @@
     <div>
         <p>Below are links to each completed assignment.</p>
         <p>The code is written in such a way that the page degrades gracefully in browsers that don't support JavaScript or CSS.</p>
-        <li><a href="HelloWorld.html" onClick="theAnchorOnClick(1)"> Hello World Assignment</a></li>
-        <li><a href="Adindex.html" onclick="theAnchorOnClick(2)"> Ad Assignment </a></li>
-        <li><a href="AnnotatingCSS.html" onclick="theAnchorOnClick(3)"> Annotating CSS Assignment</a></li>
+        <a href="HelloWorld.html" onClick="theAnchorOnClick(1)"> Hello World Assignment</a>
+        <a href="Adindex.html" onClick="theAnchorOnClick(2)"> Ad Assignment </a>
+        <a href="AnnotatingCSS.html" onClick="theAnchorOnClick(3)"> Annotating CSS Assignment</a>
     </div>
 </div>
 </body>
