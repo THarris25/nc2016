@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database Insert</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="Databases_JS.js" type="text/javascript"></script>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body onload="onLoad()">
+<form id="dbInsert" name="dbInsert">
+    Character Name:
+    <input type="text" id="CharacterName" name="CharacterName">
+    <br>
+    <br>
+    Player:
+    <select id="Id" name="Id"></select>
+    <br>
+    <br>
+    Level:
+    <input type="text" id="Level" name="Level">
+    <br>
+    <br>
+    Class:
+    <input type="text" id="Class" name="Class">
+    <br>
+    <br>
+    <button type="button" onclick="insertCharacter()">
+        Insert
+    </button>
+
+
+    <p id="results"></p>
+</form>
+</body>
+</html>
