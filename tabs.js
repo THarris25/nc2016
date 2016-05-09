@@ -86,3 +86,9 @@ function theAnchorOnClick(ItemNum) {
     document.getElementById("divMenuItem3").style.display = "none";
     document.getElementById("divMenuItem" + ItemNum).style.display = "block";
 }
+
+function buttonGame(buttonId,showButton){
+    document.getElementById("button" + buttonId).style.display = "none";
+    document.getElementById("button" + showButton).style.display = "block";
+
+}
