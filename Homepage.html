@@ -9,27 +9,7 @@
     <link href="style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body onload="initTabs()">
-<script>
-    $(document).ready(function(){
-        $("#surprise").hover(function(){
-            $("#surprise").hide();
-            $("#uphere").show();
-        });
-        $("#uphere").hover(function(){
-            $("#uphere").hide();
-            $("#tooslow").show();
-        });
-        $("#tooslow").hover(function(){
-            $("#tooslow").hide();
-            $("#annoyed").show();
-        });
-        $("#annoyed").hover(function(){
-            $("#annoyed").hide();
-            $("#uphere").show();
-        });
 
-    });
-</script>
 <ul id="tabs">
     <li><a href="#home">Home Page</a></li>
     <li><a href="#assignments">Assignment Page</a></li>
@@ -38,19 +18,21 @@
 <div class="tabContent" id="home">
     <h2>Welcome!</h2>
     <div>
-        <button id="uphere">Up Here!</button>
+        <button id="button3" onClick="buttonGame(3,4)">Up Here!</button>
 
         <p>This is my Net Centric Computing page.</p>
 
-        <button id="annoyed">This is Fun!</button>
+        <button id="button4" onClick="buttonGame(4,5)">This is Fun!</button>
 
         <p>Above you'll find a tab that displays all of the current, completed assignments for this class.</p>
 
-        <button id="surprise">Surprise Me!</button>
+        <button id="button1" onClick="buttonGame(1,2)">Surprise Me!</button>
+
+        <a id="button5" href="http://funfactsdaily.com/"> This ones real!</a>
 
         <p id="githubLink"> <a href="https://github.com/THarris25/nc2016.git"> My GitHub Repository</a></p>
 
-        <button id="tooslow">Ha! Too Slow!</button>
+        <button id="button2" onClick="buttonGame(2,3)">Ha! Too Slow!</button>
 
     </div>
 </div>
