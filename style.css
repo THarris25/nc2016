@@ -1,7 +1,7 @@
 body
 {
     background-color:ivory;
-    font-size: 80%;                         /* Default font and size for page */
+    font-size: 80%;                        
     font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
 }
 h1
@@ -10,10 +10,10 @@ h1
 }
 ul#tabs
 {
-    list-style-type: none;                  /* No bullets                     */
-    margin: 15px 0 0 0;                    /* Positive top margin            */
-    padding: 0 0 0.3em 0;                   /* Bottom padding on tabs to make  */
-    /* them adjacent to the content   */
+    list-style-type: none;                  
+    margin: 15px 0 0 0;                   
+    padding: 0 0 0.3em 0;                 
+    
 }
 ul#tabs li
 {
@@ -94,15 +94,20 @@ pre
     font-size:1.25em;
 
 }
-#uphere
+
+#button2
 {
     display: none;
 }
-#tooslow
+#button3
 {
     display: none;
 }
-#annoyed
+#button4
+{
+    display: none;
+}
+#button5
 {
     display: none;
 }
